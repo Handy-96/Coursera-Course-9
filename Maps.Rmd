@@ -1,0 +1,20 @@
+---
+title: "Coursera Developing Data Project 1"
+author: "Handy Gouwardy"
+date: "1/15/2020"
+output: html_document
+---
+
+```{r}
+library(leaflet)
+```
+
+```{r}
+my_map <- leaflet() %>%
+        addTiles
+
+my_map <- my_map %>%
+        addMarkers(lat=51.452437, lng=-0.298503,
+                   popup="The Roebuck (Best view for drinking your pint in London)")
+my_map
+```
